@@ -1,0 +1,22 @@
+{
+  "packages": [
+    "git@latest",
+    "which@latest",
+    "nodePackages.ganache-cli@latest",
+    "cmake@latest",
+    "nodejs@latest",
+    "solc@latest",
+    "vim@latest",
+    "python311Packages.pip@latest",
+    "python311@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      ". $VENV_DIR/bin/activate"
+    ],
+    "scripts": {
+      "run_test": "python main.py",
+      "cls":      "printf '\\33c\\e[3J'"
+    }
+  }
+}
